@@ -524,6 +524,10 @@ AFRAME.registerState({
       state.isMenuOpening = false;
     },
 
+    menuopeningend2: state => {
+      state.isMenuOpening = false;
+    },
+
     minehit: state => {
       takeDamage(state);
     },
@@ -719,6 +723,11 @@ AFRAME.registerState({
     startgame: state => {
       state.introActive = false;
       state.menuActive = true;
+    },
+
+    startgame2: state => {
+      state.introActive = false;
+      state.menuActive = false;
     },
 
     victoryfake: state => {
